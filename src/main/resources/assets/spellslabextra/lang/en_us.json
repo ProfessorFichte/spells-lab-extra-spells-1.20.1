@@ -1,0 +1,19 @@
+{
+  "spell.spellslabextra.arrow_rain.name": "Arrow Rain",
+  "spell.spellslabextra.arrow_rain.description": "Unleash a volley of arrows, raining down in an area.",
+
+  "spell.spellslabextra.force_push.name": "Force Push",
+  "spell.spellslabextra.force_push.description": "Push your target away, making it levitate for an instant.",
+
+  "spell.spellslabextra.holy_rain.name": "Holy Rain",
+  "spell.spellslabextra.holy_rain.description": "Call down a rain of Holy energy in an area, healing allies and damaging enemies.",
+
+  "spell.spellslabextra.ice_barrage.name": "Ice Barrage",
+  "spell.spellslabextra.ice_barrage.description": "Shoot a barrage of 8 projectiles in a cone, each dealing {damage} frost spell damage. Short range.",
+
+  "spell.spellslabextra.scorch.name": "Scorch",
+  "spell.spellslabextra.scorch.description": "Set the area around you in fire, damaging enemies for {damage} fire spell damage and setting them on fire. Lasts for {cloud_duration} seconds.",
+
+  "spell.spellslabextra.stone_fist.name": "Stone Fist",
+  "spell.spellslabextra.stone_fist.description": "Shoot a powerful Stone Fist, dealing {damage}_0 physical damage + {damage}_1 holy spell damage, and slowing enemies in an area."
+}

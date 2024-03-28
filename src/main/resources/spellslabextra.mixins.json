@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.etienne.spellslabsextra.mixin",
+	"package": "net.etienne.spellslabextra.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ExampleMixin"

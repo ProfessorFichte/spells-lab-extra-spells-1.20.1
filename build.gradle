@@ -11,11 +11,13 @@ base {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	maven {
+		name = 'Modrinth'
+		url = 'https://api.modrinth.com/maven'
+		content {
+			includeGroup 'maven.modrinth'
+		}
+	}
 }
 
 fabricApi {
@@ -23,18 +25,29 @@ fabricApi {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
+	// Minecraft
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
+	// Fabric
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
-	// Uncomment the following line to enable the deprecated Fabric API modules. 
-	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
-	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+	// Dependencies
+
+	modImplementation("maven.modrinth:spell-engine:${project.spell_engine_version}")
+	modImplementation("maven.modrinth:spell-power:${project.spell_power_version}-fabric")
+	modImplementation("maven.modrinth:runes:${project.runes_version}-fabric")
+
+	modImplementation("maven.modrinth:archers:${project.archers_version}-fabric")
+	modImplementation("maven.modrinth:paladins-and-priests:${project.paladins_version}-fabric")
+	modImplementation("maven.modrinth:wizards:${project.wizards_version}-fabric")
+
+	include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:${project.mixin_extras_version}")))
+
+	//    modImplementation(files("run/mods/dev/spell_engine-${project.spell_engine_version}.jar"))
+	//    modImplementation(files("run/mods/dev/spell_power-fabric-${project.spell_power_version}.jar"))
+	//    modImplementation(files("run/mods/dev/runes-fabric-${project.runes_version}.jar"))
 }
 
 processResources {
@@ -73,11 +86,6 @@ publishing {
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
 	}
 }

@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "spellslabsextra",
+	"id": "spellslabextra",
 	"version": "${version}",
-	"name": "Spells Lab : Extra Spells",
-	"description": "This mod is an add-on for the RPG Series mods, which adds an extra spell to each base class.",
+	"name": "Spells Lab : Extras",
+	"description": "This is an add-on for the RPG Series mods, which adds an extra spell to each base class.",
 	"authors": [
 		"Etienne"
 	],
@@ -12,18 +12,18 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/spellslabsextra/icon.png",
+	"icon": "assets/spellslabextra/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.etienne.spellslabsextra.SpellsLabExtraSpells"
+			"net.etienne.spellslabextra.SpellsLabExtraSpells"
 		],
-		"fabric-datagen": [
-			"net.etienne.spellslabsextra.SpellsLabExtraSpellsDataGenerator"
+		"client": [
+			"net.etienne.spellslabextra.SpellsLabExtraSpellsClient"
 		]
 	},
 	"mixins": [
-		"spellslabsextra.mixins.json"
+		"spellslabextra.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
