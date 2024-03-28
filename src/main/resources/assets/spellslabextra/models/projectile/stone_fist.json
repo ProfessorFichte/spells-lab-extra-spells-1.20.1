@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "spellslabextra:spell_projectile/stone_fist",
+		"particle": "spellslabextra:spell_projectile/stone_fist"
+	},
+	"elements": [
+		{
+			"name": "fist",
+			"from": [3, 8, 0],
+			"to": [16, 22, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 3.25, 3.5], "texture": "#0"},
+				"east": {"uv": [6.5, 3.75, 8.5, 7.25], "texture": "#0"},
+				"south": {"uv": [3.5, 0, 6.75, 3.5], "texture": "#0"},
+				"west": {"uv": [7, 0, 9, 3.5], "texture": "#0"},
+				"up": {"uv": [3.25, 9.5, 0, 7.5], "texture": "#0"},
+				"down": {"uv": [6.75, 7.5, 3.5, 9.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "back_fist",
+			"from": [4, 8, 8],
+			"to": [16, 22, 14],
+			"faces": {
+				"north": {"uv": [0, 3.75, 3, 7.25], "texture": "#0"},
+				"east": {"uv": [7, 7.5, 8.5, 11], "texture": "#0"},
+				"south": {"uv": [3.25, 3.75, 6.25, 7.25], "texture": "#0"},
+				"west": {"uv": [8.75, 3.75, 10.25, 7.25], "texture": "#0"},
+				"up": {"uv": [11.75, 9, 8.75, 7.5], "texture": "#0"},
+				"down": {"uv": [12.25, 0, 9.25, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "thumb",
+			"from": [0, 12, 3],
+			"to": [3, 22, 8],
+			"faces": {
+				"north": {"uv": [10.5, 3.5, 11.25, 6], "texture": "#0"},
+				"east": {"uv": [2.25, 9.75, 3.5, 12.25], "texture": "#0"},
+				"south": {"uv": [11, 9.25, 11.75, 11.75], "texture": "#0"},
+				"west": {"uv": [3.75, 9.75, 5, 12.25], "texture": "#0"},
+				"up": {"uv": [2, 13.25, 1.25, 12], "texture": "#0"},
+				"down": {"uv": [12.75, 7.25, 12, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "back_thumb",
+			"from": [0, 16, 8],
+			"to": [4, 22, 14],
+			"faces": {
+				"north": {"uv": [5.25, 11.5, 6.25, 13], "texture": "#0"},
+				"east": {"uv": [9.25, 1.75, 10.75, 3.25], "texture": "#0"},
+				"south": {"uv": [8, 11.5, 9, 13], "texture": "#0"},
+				"west": {"uv": [5.25, 9.75, 6.75, 11.25], "texture": "#0"},
+				"up": {"uv": [10.25, 13, 9.25, 11.5], "texture": "#0"},
+				"down": {"uv": [1, 12, 0, 13.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "wrist",
+			"from": [4, 10, 14],
+			"to": [12, 18, 17],
+			"faces": {
+				"north": {"uv": [8.75, 9.25, 10.75, 11.25], "texture": "#0"},
+				"east": {"uv": [7, 11.25, 7.75, 13.25], "texture": "#0"},
+				"south": {"uv": [0, 9.75, 2, 11.75], "texture": "#0"},
+				"west": {"uv": [11.5, 1.75, 12.25, 3.75], "texture": "#0"},
+				"up": {"uv": [12.5, 7, 10.5, 6.25], "texture": "#0"},
+				"down": {"uv": [13.5, 4, 11.5, 4.75], "texture": "#0"}
+			}
+		}
+	]
+}
