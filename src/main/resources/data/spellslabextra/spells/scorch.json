@@ -23,7 +23,7 @@
         ]
       },
     "release": {
-      "animation": "spell_engine:one_handed_area_release",
+      "animation": "spell_engine:one_handed_area_release_ground_left_to_right",
       "target": {
         "type": "CLOUD",
         "cloud": {
@@ -33,12 +33,17 @@
               "vertical_range_multiplier": 0.3
             },
             "sound": {
-              "id": "spell_engine:generic_fire_casting",
+              "id": "spell_engine:fire_scorch_impact",
               "randomness": 1
             }
           },
           "impact_tick_interval": 15,
           "time_to_live_seconds": 8,
+          "spawn": {
+            "sound": {
+              "id": "wizards:fire_wall_ignite"
+            }
+          },
           "client_data": {
             "particles": [
               {
@@ -48,6 +53,32 @@
                 "count": 2.0,
                 "min_speed": 0.0,
                 "max_speed": 0.0
+              },
+              {
+                "particle_id": "spell_engine:flame_ground",
+                "shape": "PILLAR",
+                "origin": "FEET",
+                "count": 5.0,
+                "min_speed": 0.0,
+                "max_speed": 0.0
+              },
+              {
+                "particle_id": "spell_engine:flame_medium_a",
+                "shape": "PILLAR",
+                "origin": "FEET",
+                "count": 5.0,
+                "extent": 0,
+                "min_speed": 0.01,
+                "max_speed": 0.07
+              },
+              {
+                "particle_id": "spell_engine:flame_medium_b",
+                "shape": "PILLAR",
+                "origin": "FEET",
+                "count": 5.0,
+                "extent": 0,
+                "min_speed": 0.01,
+                "max_speed": 0.07
               },
               {
                 "particle_id": "spell_engine:flame",
@@ -75,7 +106,8 @@
         "action": {
             "type": "DAMAGE",
             "damage": {
-                "spell_power_coefficient": 0.2
+                "spell_power_coefficient": 0.2,
+                "knockback": 0
             }
         },
         "particles": [
@@ -87,7 +119,10 @@
             "min_speed": 0.1,
             "max_speed": 0.2
           }
-        ]
+        ],
+        "sound": {
+          "id": "wizards:fire_scorch_impact"
+        }
       },
       {
         "action": {
@@ -101,6 +136,6 @@
     "cost": {
       "item_id": "runes:fire_stone",
       "exhaust": 0.4,
-      "cooldown_duration": 20
+      "cooldown_duration": 24
     }
   }

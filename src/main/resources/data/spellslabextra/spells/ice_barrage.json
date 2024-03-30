@@ -46,7 +46,7 @@
                 }
               ],
               "model": {
-                "model_id": "wizards:projectile/ice_lance_projectile",
+                "model_id": "wizards:projectile/frost_shard_projectile",
                 "scale": 0.8
               }
             }

@@ -3,6 +3,7 @@
       "wizards:arcane_missile",
       "wizards:arcane_blast",
       "wizards:arcane_beam",
-      "spellslabextra:force_push"
+      "spellslabextra:force_push",
+      "wizards:arcane_blink"
     ]
   }
