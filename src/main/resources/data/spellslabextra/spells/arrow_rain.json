@@ -54,7 +54,7 @@
         "action": {
           "type": "DAMAGE",
           "damage": {
-            "spell_power_coefficient": 0.5,
+            "spell_power_coefficient": 0.3,
             "knockback": 0
           }
         },
@@ -74,9 +74,9 @@
       }
     ],
     "area_impact": {
-      "radius": 1.5,
+      "radius": 2,
       "area": {
-        "distance_dropoff": "SQUARED"
+        "distance_dropoff": "NONE"
       },
       "sound": {
         "id": "minecraft:entity.arrow.hit"
@@ -85,6 +85,6 @@
     "cost": {
       "item_id": "arrow",
       "consume_item": false,
-      "cooldown_duration": 10
+      "cooldown_duration": 15
     }
 }
