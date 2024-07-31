@@ -116,7 +116,7 @@
     "area_impact": {
       "radius": 3,
       "area": {
-        "distance_dropoff": "SQUARED"
+        "distance_dropoff": "NONE"
       }
     },
     "cost": {

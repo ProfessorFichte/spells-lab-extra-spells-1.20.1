@@ -11,9 +11,12 @@
   "spell.spellslabextra.ice_barrage.name": "Ice Barrage",
   "spell.spellslabextra.ice_barrage.description": "Shoot a barrage of 8 projectiles in a cone, each dealing {damage} frost spell damage. Short range.",
 
-  "spell.spellslabextra.scorch.name": "Scorch",
-  "spell.spellslabextra.scorch.description": "Set the area around you in fire, damaging enemies for {damage} fire spell damage and setting them on fire. Lasts for {cloud_duration} seconds.",
+  "spell.spellslabextra.scorching_ground.name": "Scorching Ground",
+  "spell.spellslabextra.scorching_ground.description": "Set the area around you in fire, damaging enemies for {damage} fire spell damage and setting them on fire. Lasts for {cloud_duration} seconds.",
+
+  "spell.spellslabextra.fire_missiles.name": "Fire Missiles",
+  "spell.spellslabextra.fire_missiles.description": "Shoot a barrage of homing missiles at your enemies, dealing {damage} fire spell damage.",
 
   "spell.spellslabextra.stone_fist.name": "Stone Fist",
-  "spell.spellslabextra.stone_fist.description": "Shoot a powerful Stone Fist, dealing {damage}_0 physical damage + {damage}_1 holy spell damage, and slowing enemies in an area."
+  "spell.spellslabextra.stone_fist.description": "Shoot a powerful Stone Fist, dealing {damage_1} physical damage + {damage_2} holy spell damage, and slowing enemies in an area."
 }

@@ -47,10 +47,11 @@ dependencies {
 	modImplementation("maven.modrinth:spell-engine:${project.spell_engine_version}")
 	modImplementation("maven.modrinth:spell-power:${project.spell_power_version}-fabric")
 	modImplementation("maven.modrinth:runes:${project.runes_version}-fabric")
+	include(modImplementation("maven.modrinth:ranged-weapon-api:${project.ranged_weapon_api_version}"))
 
-	modImplementation("maven.modrinth:archers:${project.archers_version}-fabric")
-	modImplementation("maven.modrinth:paladins-and-priests:${project.paladins_version}-fabric")
-	modImplementation("maven.modrinth:wizards:${project.wizards_version}-fabric")
+	//modImplementation("maven.modrinth:archers:${project.archers_version}-fabric")
+	//modImplementation("maven.modrinth:paladins-and-priests:${project.paladins_version}-fabric")
+	//modImplementation("maven.modrinth:wizards:${project.wizards_version}-fabric")
 
 	include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:${project.mixin_extras_version}")))
 

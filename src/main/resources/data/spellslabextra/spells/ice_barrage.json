@@ -33,6 +33,9 @@
           },
           "projectile": {
             "divergence": 25,
+            "perks": {
+              "pierce": 2
+            },
             "client_data": {
               "travel_particles": [
                 {
@@ -78,7 +81,7 @@
             }
         ],
         "sound": {
-            "id": "wizards:ice_lance_impact",
+            "id": "wizards:frost_shard_impact",
             "randomness": 1
         }
       }

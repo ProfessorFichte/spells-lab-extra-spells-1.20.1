@@ -46,7 +46,7 @@
       },
       "animation": "spell_engine:archery_release",
       "sound": {
-        "id": "minecraft:item.crossbow.shoot "
+        "id": "minecraft:item.crossbow.shoot"
       }
     },
     "impact": [
