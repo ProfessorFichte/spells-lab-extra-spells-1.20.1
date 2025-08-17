@@ -10,9 +10,9 @@ public class SpellsLabExtraSpellsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         CustomModels.registerModelIds(List.of(
-                new Identifier(SpellsLabExtraSpells.MOD_ID, "projectile/arrow"),
-                new Identifier(SpellsLabExtraSpells.MOD_ID, "projectile/laser"),
-                new Identifier(SpellsLabExtraSpells.MOD_ID, "projectile/stone_fist")
+                Identifier.of(SpellsLabExtraSpells.MOD_ID, "projectile/arrow"),
+                Identifier.of(SpellsLabExtraSpells.MOD_ID, "projectile/laser"),
+                Identifier.of(SpellsLabExtraSpells.MOD_ID, "projectile/stone_fist")
         ));
     }
 }

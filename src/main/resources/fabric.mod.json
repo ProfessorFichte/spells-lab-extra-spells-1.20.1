@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"net.etienne.spellslabextra.SpellsLabExtraSpellsClient"
+		],
+		"fabric-datagen": [
+			"net.etienne.spellslabextra.SpellsLabExtraDatagen"
 		]
 	},
 	"mixins": [

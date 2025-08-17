@@ -1,10 +1,17 @@
 plugins {
-	id 'fabric-loom' version '1.5-SNAPSHOT'
+	id 'fabric-loom' version '1.9-SNAPSHOT'
 	id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
+
+fabricApi {
+	configureDataGeneration() {
+		client = true
+		modId = "spellslabextra"
+	}
+}
 
 base {
 	archivesName = project.archives_base_name
@@ -26,10 +33,6 @@ repositories {
 		name = "Ladysnake Libs"
 		url = 'https://maven.ladysnake.org/releases'
 	}
-}
-
-fabricApi {
-	configureDataGeneration()
 }
 
 dependencies {
