@@ -18,6 +18,8 @@ base {
 }
 
 repositories {
+	maven { url = 'https://maven.kosmx.dev/' }
+	maven { url = 'https://maven.shedaniel.me/' }
 	maven {
 		name = 'Modrinth'
 		url = 'https://api.modrinth.com/maven'
@@ -46,11 +48,17 @@ dependencies {
 
 	// Dependencies
 
+	modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim_version}")
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+
 	modImplementation("dev.emi:trinkets:${project.trinkets_version}")
 	modImplementation("maven.modrinth:spell-engine:${project.spell_engine_version}")
 	modImplementation("maven.modrinth:spell-power:${project.spell_power_version}-fabric")
 	modImplementation("maven.modrinth:runes:${project.runes_version}-fabric")
 	include(modImplementation("maven.modrinth:ranged-weapon-api:${project.ranged_weapon_api_version}"))
+	implementation include("com.github.ZsoltMolnarrr:TinyConfig:${project.tiny_config_version}")
 
 	//modImplementation("maven.modrinth:archers:${project.archers_version}-fabric")
 	//modImplementation("maven.modrinth:paladins-and-priests:${project.paladins_version}-fabric")

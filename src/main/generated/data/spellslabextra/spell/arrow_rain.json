@@ -1,0 +1,95 @@
+{
+  "school": "spell_power:physical_ranged",
+  "range": 32.0,
+  "tier": 3,
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 1.0,
+      "animation": "spell_engine:archery_pull",
+      "animates_ranged_weapon": true,
+      "sound": {
+        "id": "archers:bow_pull"
+      }
+    }
+  },
+  "release": {
+    "animation": "spell_engine:archery_release",
+    "sound": {
+      "id": "minecraft:item.crossbow.shoot"
+    }
+  },
+  "target": {
+    "type": "AIM",
+    "aim": {
+      "required": true,
+      "sticky": true
+    }
+  },
+  "deliver": {
+    "type": "METEOR",
+    "meteor": {
+      "launch_radius": 1.5,
+      "launch_properties": {
+        "velocity": 2.0,
+        "extra_launch_count": 14,
+        "extra_launch_delay": 3
+      },
+      "projectile": {
+        "client_data": {
+          "travel_particles": [
+            {
+              "particle_id": "minecraft:crit",
+              "origin": "CENTER",
+              "shape": "CIRCLE",
+              "rotation": "LOOK",
+              "count": 3.0,
+              "max_speed": 0.0
+            }
+          ],
+          "model": {
+            "model_id": "spellslabextra:projectile/arrow"
+          }
+        }
+      }
+    }
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "spell_power_coefficient": 0.3,
+          "knockback": 0.0
+        }
+      },
+      "particles": [
+        {
+          "particle_id": "Entry[id=spell_engine:dripping_blood, texture=Texture[id=minecraft:drip_hang, frames=1, reverseOrder=false], particleType=net.spell_engine.fx.SpellEngineParticles$Helper@69bcbbf2]",
+          "origin": "CENTER",
+          "shape": "SPHERE",
+          "count": 3.0,
+          "min_speed": 0.5
+        }
+      ],
+      "sound": {
+        "id": "archers:magic_arrow_impact"
+      }
+    }
+  ],
+  "area_impact": {
+    "radius": 2.0,
+    "sound": {
+      "id": "minecraft:entity.arrow.hit"
+    }
+  },
+  "cost": {
+    "exhaust": 0.0,
+    "cooldown": {
+      "duration": 15.0
+    },
+    "item": {
+      "id": "arrow"
+    }
+  }
+}

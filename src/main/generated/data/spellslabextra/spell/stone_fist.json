@@ -1,0 +1,142 @@
+{
+  "school": "spell_power:physical_melee",
+  "range": 6.0,
+  "tier": 3,
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 0.3,
+      "animation": "spell_engine:one_handed_projectile_charge",
+      "sound": {
+        "id": "spell_engine:generic_healing_casting"
+      },
+      "particles": [
+        {
+          "particle_id": "spell_engine:magic_spark_float",
+          "origin": "FEET",
+          "shape": "PIPE",
+          "count": 1.0,
+          "min_speed": 0.05,
+          "max_speed": 0.1,
+          "color_rgba": 4294954239
+        }
+      ]
+    }
+  },
+  "release": {
+    "animation": "spell_engine:one_handed_projectile_release",
+    "sound": {
+      "id": "spell_engine:generic_healing_release"
+    }
+  },
+  "target": {
+    "type": "AIM",
+    "aim": {}
+  },
+  "deliver": {
+    "type": "PROJECTILE",
+    "projectile": {
+      "launch_properties": {
+        "velocity": 0.5
+      },
+      "projectile": {
+        "client_data": {
+          "travel_particles": [
+            {
+              "particle_id": "spell_engine:magic_spark_float",
+              "origin": "CENTER",
+              "shape": "CIRCLE",
+              "count": 5.0,
+              "max_speed": 0.1,
+              "color_rgba": 4294954239
+            }
+          ],
+          "model": {
+            "model_id": "spellslabextra:projectile/stone_fist"
+          }
+        }
+      }
+    }
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "spell_power_coefficient": 0.4,
+          "knockback": 2.0
+        }
+      },
+      "particles": [
+        {
+          "particle_id": "spell_engine:magic_spark_float",
+          "origin": "CENTER",
+          "shape": "SPHERE",
+          "count": 25.0,
+          "min_speed": 0.2,
+          "color_rgba": 4294954239
+        }
+      ]
+    },
+    {
+      "school": "spell_power:healing",
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "spell_power_coefficient": 0.5,
+          "knockback": 0.0
+        }
+      }
+    },
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "minecraft:slowness",
+          "duration": 5.0,
+          "amplifier": 1,
+          "amplifier_cap": 3,
+          "apply_mode": "ADD"
+        }
+      }
+    }
+  ],
+  "area_impact": {
+    "radius": 4.0,
+    "area": {
+      "distance_dropoff": "SQUARED"
+    },
+    "particles": [
+      {
+        "particle_id": "spell_engine:magic_spark_float",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 100.0,
+        "min_speed": 0.2,
+        "max_speed": 0.4,
+        "color_rgba": 4294954239
+      },
+      {
+        "particle_id": "smoke",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 50.0,
+        "min_speed": 0.1,
+        "max_speed": 0.3
+      }
+    ],
+    "sound": {
+      "id": "minecraft:block.gravel.fall",
+      "volume": 5.0
+    }
+  },
+  "cost": {
+    "exhaust": 0.3,
+    "cooldown": {
+      "duration": 4.0
+    },
+    "item": {
+      "id": "runes:healing_stone"
+    }
+  }
+}
